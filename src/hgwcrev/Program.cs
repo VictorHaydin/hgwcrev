@@ -21,6 +21,12 @@ namespace hgwcrev
                 Usage();
                 return 1;
             }
+            Console.WriteLine("Args:");
+            foreach (var s in args)
+            {
+                Console.WriteLine(s);
+            }
+
             ms_HgPath = args[0];
             ms_TemplatePath = args[1];
             ms_OutputPath = args[2];
