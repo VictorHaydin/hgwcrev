@@ -100,7 +100,8 @@ namespace hgwcrev
 
         static string ReplaceVariables(string input)
         {
-            return input.Replace("$HGREV$", ms_Revision.ToString());
+            return input.Replace("$HGREV$", ms_Revision.ToString())
+                .Replace("$WCREV$", ms_Revision.ToString());
         }
 
         static void Usage()
